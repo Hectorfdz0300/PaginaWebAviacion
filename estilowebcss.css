@@ -1,0 +1,128 @@
+/* Estilos para el encabezado */
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+header h1 {
+margin: 0;
+}
+
+/* Estilos para la navegación */
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+display: inline-block;
+margin-right: 20px;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* Estilos para el contenido principal */
+main {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* Estilos para secciones */
+section {
+margin-bottom: 40px;
+text-align: justify;
+text-justify: inter-word;
+}
+
+section h2 {
+font-size: 28px;
+margin-bottom: 10px;
+}
+
+/* Estilos para el formulario de contacto */
+form label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: none;
+border-radius: 3px;
+background-color: #f2f2f2;
+}
+
+form textarea {
+height: 150px;
+}
+
+form input[type="submit"] {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+background-color: #666;
+}
+
+/* Estilos para el pie de página */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+/* Esto es relacionado con las imágenes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+.center { 
+    text-align: center;
+}
+
+.imagenhistoria {
+    float: right;
+    margin-left: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.texto {
+    margin-right: 20px;
+}
+
+.planeador {
+margin-top: 30px;
+}
+
+.planeador2 {
+    margin-top: 15px;
+    }
