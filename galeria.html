@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Aviación</title>
-    <link rel="stylesheet" href="estilowebcss.css">
-  </head>
-  <body>
-    <header>
-      <h1>Mi página de aviación</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="historia.html">Historia</a></li>
-          <li><a href="aviones.html">Aviones</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-        </ul>
-      </nav>
-    </header>
-        <main>
-    <section>
-     <h2 class="center">Galeria de aviones</h2>
+<head>
+<meta charset="UTF-8">
+<title>Aviación</title>
+<link rel="stylesheet" href="estilowebcss.css">
 
-    <div class="gallery">
+<script>
+    // Agrega función para cargar imágenes con onload y aplicar efecto fade in
+    function fadeIn(img) {
+        img.style.opacity = '1';
+    }
+    window.onload = function() {
+        var images = document.querySelectorAll('.gallery_v2 img');
+        for (var i = 0; i < images.length; i++) {
+            images[i].onload = function() {
+                fadeIn(this);
+            };
+            images[i].src = images[i].getAttribute('src');
+        }
+    };
+</script>
+</head>
+<body>
+<header>
+    <h1>Mi página de aviación</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="aviones.html">Aviones</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+<section>
+    <h2 class="center">Galeria de aviones</h2>
+
+    <div class="gallery_v2">
         <img src="IMG/ATR.jpg" alt="Avión 1">
         <img src="IMG/avioneta.jpg" alt="Avión 2">
         <img src="IMG/caza.jpg" alt="Avión 3">
@@ -31,10 +47,10 @@
         <img src="IMG/cesna.jpg" alt="Avión 7">
         <img src="IMG/bombardier.jpg" alt="Avión 8">
     </div>
-    </section>
-        </main>
-            <footer>
-                <p>«©» Derechos reservados a Héctor Fernández Marrero</p>
-            </footer>
-  </body>
+</section>
+</main>
+<footer>
+    <p>«©» Derechos reservados a Héctor Fernández Marrero</p>
+</footer>
+</body>
 </html>
